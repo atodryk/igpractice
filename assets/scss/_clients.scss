@@ -1,0 +1,68 @@
+.clients {
+    &__title {
+        margin-top: 0;
+        text-align: center;
+        color: $white;
+    }
+    &__img {
+        display: inline-block;
+        background: url(../img/ipad.png) no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: calc(50% - 1.5*#{$spacer});
+        height: 30vh;
+        margin-right: $spacer;
+
+    }
+    &__testimonial-wrap {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+        width: calc(50% - 1.5* #{$spacer});
+        @include md {
+            max-width: 30%;
+        }
+    }
+    &__testimonial-text {
+        position: relative;
+        margin: 0;
+        &:before {
+            content: ",,";
+            position: absolute;
+            top: $spacer;
+            left: -2*$spacer;
+            font-size: 4rem;
+            letter-spacing: -8px;
+            transform: translateY(-65px);
+        }
+    }
+    &__testimonial-author-link {
+        color: $white;
+    }
+}
+.slide {
+    display: flex;
+    position: relative;
+    background: url(/assets/img/trianglify.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: $spacer;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    li {
+        button:before {
+            font-size: 16px;
+            color: rgba($white, 0.90);
+        }
+    }
+    li.slick-active {
+        button:before {
+            color: $white;
+        }
+    }
+}

@@ -1,35 +1,63 @@
-<section class="contact">
+<section class="contact section" id="contact">
     <div class="contact__map">
         <div class="contact__info">
-            <div class="contact__info-compass"></div>
-            <p class="contact__info-street"></p>
-            <p class="contact__info-city"></p>
-            <p class="contact__info-country"></p>
-            <p class="contact__info-additional"></p>
+            <div class="contact__info-compass">
+                <svg class="contact__info-compass-svg">
+                    <use xlink:href="assets/img/navigator.svg#Forma_2"></use>
+                </svg>
+            </div>
+            <div class="contact__info-text vcard">
+                <p class="contact__info-company org">Infinity Group Sp. z o.o.</p>
+                <div>
+                    <p class="contact__info-street street-address">ul. Składowa 12</p>
+                    <p class="contact__info-city locality">15-399 Białystok</p>
+                    <p class="contact__info-country country-name">Polska.</p>
+                </div>
+                <p class="contact__info-additional">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>  
+        </div>
+        <div class="contact__info-marker"></div>
+    </div>
+    <aside class="anchor-wrap anchor-4">
+        <div class="anchor">
+            <p class="anchor-text">4/5</p>
+        </div>
+    </aside>
+    <div class="contact__wrap container">
+        <div class="contact__title-wrap">
+            <h2 class="contact__title">Contact</h2>
+            <button class="contact__btn-title btn">Let us know how to contact You</button>
+        </div>
+        <div class="contact__inner-wrap">
+            <p class="contact__subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
+            <form class="contact__form" method="GET" action="" novalidate>
+                <div class="input-group">
+                    <label for="uname" class="contact__label">Hello! I'm</label>
+                    <input type="text" class="contact__input name" id="uname" placeholder="Your name" required>
+                </div>
+                <div class="input-group">
+                    <label for="cname" class="contact__label">and I represent</label>
+                    <input type="text" class="contact__input company" id="cname" placeholder="Company name" required>
+                </div>
+                <div class="input-group">
+                    <label for="tel" class="contact__label">Call me at</label>
+                    <input type="tel" class="contact__input tel" id="tel" placeholder="Your telephone number" required>
+                </div>
+                <div class="input-group">
+                    <label for="mail" class="contact__label">or send an email to</label>
+                    <input type="mail" class="contact__input mail" id="mail" placeholder="Your email adress" required>
+                </div>
+                <div class="input-group agreement__wrap">
+                    <input type="checkbox" class="contact__input agreement" id="cbox">
+                    <label for="cbox" class="contact__label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</label>
+                </div>
+                <button type="submit" class="contact__btn-form btn">send details <div class="arrow"></div></button>
+            </form>
         </div>
     </div>
-    <aside>
-        <div class="anchor"></div>
-    </aside>
-    <div class="contact__wrap">
-        <h2>Contact</h2>
-        <button class="contact__button-title btn"></button>
-        <p class="contact__subtitle"></p>
-        <form class="contact__form">
-            <label for="uname" class="contact__label"></label>
-            <input type="text" class="contact__input name" id="uname">
-            <label for="cname" class="contact__label"></label>
-            <input type="text" class="contact__input company" id="cname">
-            <label for="tel" class="contact__label"></label>
-            <input type="telephone" class="contact__input tel" id="tel">
-            <label for="mail" class="contact__label"></label>
-            <input type="mail" class="contact__input mail" id="mail">
-            <input type="checkbox" class="contact__input agreement" id="cbox">
-            <label for="cbox" class="contact__label"></label>
-            <button type="submit" class="contact__button-form btn"></button>
-        </form>
-    </div>
-    <aside>
-        <div class="anchor"></div>
+    <aside class="anchor-wrap anchor-5">
+        <div class="anchor">
+            <p class="anchor-text">5/5</p>
+        </div>
     </aside>
 </section>

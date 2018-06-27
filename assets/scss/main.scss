@@ -1,16 +1,6 @@
-
-/*
- *
- *  Vendor
- *
-   ========================================================================== */
-   @import 'variables';
-   @import 'mixin';
-/*
- *
- *  Common & Pages
- *
-   ========================================================================== */
+    @import 'normalize';
+    @import 'variables';
+    @import 'mixin';
     @import 'common';
     @import 'header';
     @import 'hero';

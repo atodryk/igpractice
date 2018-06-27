@@ -1,0 +1,129 @@
+.products {
+    display: flex;
+    justify-content: center;
+    &__wrap {
+        max-width: 800px;
+        width: 100%;
+    }
+    &__title {
+        text-align: center;
+    }
+    &__semi-title {
+        text-align: center;
+    }
+    &__categories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include sm {
+            padding: 0 $spacer;
+        }
+    }
+    &__category {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: $spacer 0;
+        @include sm {
+            width: calc(100% / 3);
+        }
+        @include lg {
+            width: 25%;
+        }
+        &:hover {
+            background: $green;
+            .products__category-text {
+                display: block;
+            }
+        }
+        &-text {
+            display: none;
+            color: $white;
+            text-align: center;
+        }
+        &-img1 {
+            width: 100%;
+            height: 20vh;
+            background: url(../img/001-malware-1.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &-img2 {
+            width: 100%;
+            height: 20vh;
+            background: url(../img/002-smartphone-1.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &-img3 {
+            width: 100%;
+            height: 20vh;
+            background: url(../img/003-folder.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &-img4 {
+            width: 100%;
+            height: 20vh;
+            background: url(../img/004-malware.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &-img5 {
+            width: 100%;
+            height: 20vh;
+            background: url(../img/005-pendrive.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &-img6 {
+            width: 100%;
+            height: 20vh;
+            background: url(../img/006-network.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &-img7 {
+            width: 100%;
+            height: 20vh;
+            background: url(../img/007-smartphone.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &-img8 {
+            width: 100%;
+            height: 20vh;
+            background: url(../img/008-fishing.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &-img9 {
+            width: 100%;
+            height: 20vh;
+            background: url(../img/009-data-protection.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &-img10 {
+            width: 100%;
+            height: 20vh;
+            background: url(../img/010-credit-card.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &-img11 {
+            width: 100%;
+            height: 20vh;
+            background: url(../img/011-hacker.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &-img12 {
+            width: 100%;
+            height: 20vh;
+            background: url(../img/012-firewall.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+}

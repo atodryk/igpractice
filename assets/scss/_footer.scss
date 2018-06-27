@@ -1,0 +1,9 @@
+.footer {
+    background: linear-gradient(135deg, #1b3549 40%, #8D4D59, #FF6468 50%, #FFAE13 100%);
+    padding: $spacer;
+    font-size: $footer-font-size;
+    color: $font-color8;
+    &__text {
+        padding-left: $spacer;
+    }
+}
