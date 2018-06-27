@@ -16,10 +16,13 @@
     }
     &__testimonial-wrap {
         position: absolute;
-        top: 50%;
+        top: 60%;
         transform: translateY(-50%);
         display: inline-block;
         width: calc(50% - 1.5* #{$spacer});
+        @include sm {
+            top: 50%;
+        }
         @include md {
             max-width: 30%;
         }
@@ -39,6 +42,18 @@
     }
     &__testimonial-author-link {
         color: $white;
+    }
+    &__tags {
+        display: flex;
+    }
+    &__tag {
+        width: 30%;
+        height: 20px;
+        background: $white;
+        margin-right: 0.25*$spacer;
+        @include sm {
+            width: 20%;
+        }
     }
 }
 .slide {
